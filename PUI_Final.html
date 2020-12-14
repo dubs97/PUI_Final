@@ -1,0 +1,78 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">  
+        <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+        <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />  
+        <link rel="stylesheet" type="text/css" href="Assets/PUI_Final.css">
+        <!-- 1: Install JQuery, GSAP -->
+    </head>
+
+    <body>
+            <div class="h-scroll__container">
+                <div class="h-scroll" id="float-mask" style="background-image: url('Img/Desktop2.png'); background-size: cover; alt:Workplace;">
+                    <section class="section section--one">
+                    </section>
+        
+                    <section class="section section--two">
+                    </section>
+
+                    <section class="section section--three">
+                    </section>
+                </div>
+                
+
+                <div class="h-scroll">
+                    <div id="wrapper" style='z-index: 1'>
+                        <svg width="4424px" height="1024px">     
+                            <path id="curve" fill="transparent" d= " M0.17,245.23c0,0,105.85,77.7,276.46,73.2s243.8-61.37,408.77-54.05c172.09,7.64,213.4,92.34,1813.28,104.19"></path>
+                            <text x="40" id="txt" width="100%" style="transform:translate3d(0,0,0);">
+                                <textPath style="transform:translate3d(0,0,0);" alignment-baseline="top" xlink:href="#curve" id="text-path" fill="#808080" font-family="'font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;'" font-size="27.9937">Hover over the timeline circles to preview a piece of architecture from that decade, Click to Learn more!</textPath>
+                            </text>
+                            <path d="M -30 500 C 70 440, 110 640, 442 610" stroke="white" fill="transparent"/>
+                            <a href="Decades/1990.html"><circle id="c1" fill="white" cx="442" cy="610" r="13" /></a>
+                            <text transform="matrix(0.9967 -11.087198e-02 3.087198e-02 0.9967 395 655)" fill="#FFFFFF" font-family="'TradeGothicLT-Bold'" font-size="32.9937" >1990s & 21st C</text>
+                            <path id="curve2" d="M 442 610 C 642 540, 600 340, 800 390" stroke="white" fill="transparent"/> 
+                            <a href="Decades/1980.html"><circle  id="c2" fill="white" cx="795" cy="388" r="13"/></a>
+                            <text transform="matrix(0.9967 22.087198e-02 -5.087198e-02 0.9967 1050 470)" fill="#FFFFFF" font-family="'TradeGothicLT-Bold'" font-size="32.9937">1970s</text>
+                            <a href="Decades/1970.html"><circle id="c3" fill="white" cx="1100" cy="434" r="13"/></a>
+                            <text transform="matrix(0.9967 22.087198e-02 -5.087198e-02 0.9967 750 430)" fill="#FFFFFF" font-family="'TradeGothicLT-Bold'" font-size="32.9937">1980s</text>
+                            <path d="M 800 390 C 1102 540, 1000 340, 1500 490" stroke="white" fill="transparent"/>
+                            <a href="Decades/1960.html" ><circle id="c4" fill="white" cx="1495" cy="485" r="13"></a>
+                            <text transform="matrix(0.9967 22.087198e-02 -5.087198e-02 0.9967 1450 515)" fill="#FFFFFF"font-family="'TradeGothicLT-Bold'" font-size="32.9937">1960s</text>
+                            <a href="Decades/1950.html" ><circle id="c5" fill="white" cx="1895" cy="560" r="13"></a>
+                            <text transform="matrix(0.9967 22.087198e-02 -5.087198e-02 0.9967 1860 590)" fill="#FFFFFF" font-family="'TradeGothicLT-Bold'" font-size="32.9937">1950s</text>
+                            <path d="M 1500 490 C 2002 640, 2500 540, 2500 520" stroke="white" fill="transparent"/>
+                            <a href="Decades/1940.html" ><circle id="c6" fill="white" cx="2495" cy="520" r="13"></a>
+                            <text transform="matrix(0.9967 10.087198e-02 -2.087198e-02 0.8967 2490 560)" fill="#FFFFFF" font-family="'TradeGothicLT-Bold'" font-size="32.9937">1940s</text>
+                            <path d="M 2500 520 C 2902 440, 3000 340, 3400 350" stroke="white" fill="transparent"/>
+                            <a href="Decades/1930.html" > <circle  id="c7" fill="white" cx="2800" cy="445" r="13"></a>
+                            <text transform="matrix(0.9967 22.087198e-02 -5.087198e-02 0.9967 2750 490)" fill="#FFFFFF" font-family="'TradeGothicLT-Bold'" font-size="32.9937">1930s</text>
+                        </svg>
+                    </div>  
+
+                    <div id="items" style='z-index: 2'>
+                        <img id="h1" src="../PUI_Final/Img/preview1.png" width="200px" height="200px"> 
+                        <img id="h2" src="../PUI_Final/Img/preview2.png" width="200px" height="200px"> 
+                        <img id="h3" src="../PUI_Final/Img/preview3.png" width="200px" height="200px"> 
+                        <img id="h4" src="../PUI_Final/Img/preview4.png" width="200px" height="200px"> 
+                        <img id="h5" src="../PUI_Final/Img/preview5.png" width="200px" height="200px">
+                        <img id="h6" src="../PUI_Final/Img/preview6.png" width="200px" height="200px">  
+                        <img id="h7" src="../PUI_Final/Img/preview7.png" width="200px" height="200px"> 
+                        <img id="h8" src="../PUI_Final/Img/preview8.png" width="200px" height="200px"> 
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js" ></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js" ></script>
+        <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+        <script src="../PUI_Final/Assets/final.js"></script>
+    </body>
